@@ -4,11 +4,18 @@
 
 int main(void)
 {
+    char name[100];
     int heads = 0;
     int tails = 0;
     int toss;
 
     srand(time(NULL));
+
+    printf("Who are you?\n");
+    printf("> ");
+    scanf("%99s", name);
+
+    printf("Hello, %s!\n", name);
 
     printf("Tossing a coin...\n");
 
